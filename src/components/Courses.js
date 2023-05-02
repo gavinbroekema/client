@@ -15,6 +15,7 @@ export default function Courses(props) {
       .then((res) => res.json())
       .then((data) => {
         setCourses(data);
+        console.log(courses);
         setLoading(false);
       });
   }, []);
@@ -23,6 +24,7 @@ export default function Courses(props) {
     <>
       <Header />
       {loading ? <p>Loading...</p> : <CourseList data={courses} />}
+  
       
     </>
   );

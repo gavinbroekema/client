@@ -8,7 +8,6 @@ export default function Course(props) {
           <Link class="course--module course--link" to="/courses">
             <h2 class="course--label">Course</h2>
             <h3 class="course--title">{props.title}</h3>
-            <p>Course {props.id}</p>
           </Link>
 
   );
