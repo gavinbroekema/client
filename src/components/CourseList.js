@@ -10,6 +10,7 @@ export default function CourseList(props) {
       <Course
         title={course.title}
         description={course.description}
+        id={course.id}
         key={course.id}
       />
     ));
