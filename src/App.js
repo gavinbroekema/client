@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import {useState, useEffect} from 'react';
 
 // Import Stylesheet
@@ -10,14 +10,15 @@ import logo from './logo.svg';
 // import '../styles/global.css';
 import Header from './components/Header';
 import Courses from './components/Courses';
-
+import CourseDetail from './components/CourseDetail';
 
 function App() {
   return (
   <BrowserRouter>
       <Routes>
         <Route path="/" element={<Header />} />
-        <Route path="/courses" element={<Courses />} />
+        <Route path="courses" element={<Courses />}/>
+        <Route path="/courses/:id" element={<CourseDetail />}/>
       </Routes>
     </BrowserRouter>
   )
