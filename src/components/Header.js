@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Header(props) {
   return (
     <header>
       <div class="wrap header--flex">
         <h1 class="header--logo">
-          <a href="index.html">Courses</a>
+          <Link to="/courses">Courses</Link>
         </h1>
         <nav>
           <ul class="header--signedin">
